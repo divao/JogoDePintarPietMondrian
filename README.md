@@ -1,1 +1,2 @@
-JogoDePintarPietMondrian
+Jogo, em HTML com CSS e CGI, desenvolvido como trabalho final da disciplina Construção de Algoritmos e Programação, feita em 2016/1 na Universidade Federal de São Carlos.
+Para conferir o jogo funcionando direto no navegador, acesse o link: http://cap.dc.ufscar.br/~726502/TrabalhoFinal.html

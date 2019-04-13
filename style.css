@@ -1,0 +1,721 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background-color: rgba(173, 70, 67, 1);
+	text-align: center;
+	padding: 22px;
+}
+body * {
+	font-family: Georgia, Constantia, serif;
+}
+
+h1 {
+	color: rgb(228, 214, 27);
+	margin-top: -1px;
+	margin-bottom: 10px;
+}
+input, select {
+	margin: 0px;
+	border: solid 2px black;
+	padding: 6px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+select {
+	padding: 5px;
+	background-color: buttonhighlight;
+        outline: none;
+}
+
+.s1 {
+    background-color: black;
+    color: white;
+}
+.s2 {
+    background-color: red;
+    color: black;
+}
+.s3 {
+    background-color: yellow;
+    color: black;
+}
+.s4 {
+    background-color: blue;
+    color: black;
+}
+.s5 {
+    background-color: white;
+    color: black;
+}
+
+#desenho {
+	position: absolute;
+	left: calc(50% - 470px);
+	top: calc(50% - 200px);
+	height: 450px;
+	width: 950px;
+        padding-top: 1px;
+	line-height: 0;
+	overflow: hidden;
+}
+#desenho input[type="checkbox"] {
+	display: none;
+}
+#desenho label:nth-of-type(1) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 50px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(2) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 100px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(3) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 70px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(4) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 130px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(5) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 100px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(6) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 51px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(7) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 250px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(8) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 30px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(9) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 120px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(10) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 189px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(11) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 40px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(12) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 100px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(13) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 220px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(14) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 140px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(15) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 60px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(16) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 100px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(17) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 50px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(18) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 70px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(19) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 50px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(20) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 25px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(21) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 70px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(22) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 85px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(23) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 61px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(24) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 80px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(25) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 30px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(26) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 90px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(27) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 40px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(28) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 80px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(29) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 120px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(30) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 60px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(31) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 45px;
+	width: 50px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(32) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 70px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(33) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 25px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(34) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 50px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(35) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 30px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(36) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 60px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(37) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 45px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(38) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 95px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(39) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 117px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(40) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 70px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(41) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 50px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(42) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 76px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(43) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 115px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(44) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 40px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(45) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 25px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(46) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 60px;
+	width: 45px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(47) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 80px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(48) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 40px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(49) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 60px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(50) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 90px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(51) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 50px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(52) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 75px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(53) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 65px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(54) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 55px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(55) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 95px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(56) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 30px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(57) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 80px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(58) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 40px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(59) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 85px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(60) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 66px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(61) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 95px;
+	width: 150px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(62) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 95px;
+	width: 80px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(63) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 95px;
+	width: 40px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(64) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 95px;
+	width: 100px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(65) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 95px;
+	width: 60px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(66) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 95px;
+	width: 50px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(67) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 95px;
+	width: 200px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(68) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 95px;
+	width: 90px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(69) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 95px;
+	width: 75px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+#desenho label:nth-of-type(70) {
+	display: inline-block;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	height: 95px;
+	width: 58px;
+	border: solid 2px black;
+        margin: -1px -1px -1px -1px;
+}
+
+
+#desenho label:hover {
+	background-color: buttonhighlight !important;
+}
+#desenho input[type="checkbox"]:checked + label{
+	background-color: darkgray !important;
+}
+
+.caixa{
+    display: inline-block;
+    left: calc(50% - 400px);
+    height: 200px;
+    width: 800px;
+}
+
+p {
+    font-family: Times New Roman;
+    font-size: 24px;
+    color: ghostwhite;
+}
+
+.imagens {
+    
+}
